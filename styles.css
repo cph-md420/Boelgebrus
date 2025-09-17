@@ -1,0 +1,21 @@
+
+.navbar-toggler{
+    border: none !important;
+}
+.descriptor {
+    display: block;
+    position: fixed;
+    z-index: 50;
+    width: 100vh;
+    text-align: center;
+    font-size: 24px;
+}
+.descriptor-left {
+    transform-origin: top left;
+    transform: rotate(-90deg) translate(-100%, 2rem);
+}
+.descriptor-right {
+    right: 0;
+    transform-origin: top right;
+    transform: rotate(90deg) translate(100%, 2rem);
+}
