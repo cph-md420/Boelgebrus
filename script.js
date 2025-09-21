@@ -12,9 +12,10 @@ function removeClass(){
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 300) {
     addClass();
   } else {
     removeClass();
   }
 }
+

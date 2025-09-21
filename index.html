@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bølgebrus</title>
+
+    <!-- Bootstrap bibliotek -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Egen styling -->
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navbar: -->
     <nav class="navbar navbar-light bg-body-tertiary sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand mx-auto" href="index.html">
@@ -45,28 +48,56 @@
     </nav>
     <!-- Sideinformation: -->
     <div id="descriptor">
-        <div class="descriptor descriptor-left"><p>Lynæs Havnevej 8A, 3390 Hundested</p></div>
-    <div class="descriptor descriptor-right"><p>14-16 aug 2026</p></div>
+        <div class="descriptor descriptor-left">Lynæs Havnevej 8A, 3390 Hundested</div>
+        <div class="descriptor descriptor-right">14-16 aug 2026</p></div>
     </div>
     <!-- Banner: -->
     <div class="wave">
         <picture>
             <source media="(min-width:768px)" srcset="https://placehold.co/600x270" alt="" width="100%">
-            <img src="https://placehold.co/300x600" alt="" width="100%"" alt="">
+            <img src="https://placehold.co/300x500" alt="" width="100%"" alt="">
         </picture>
         <div class="wave-img-top">
-            <img src="img/wave1.png" alt="" width="100%">
+            <picture>
+                <source media="(min-width:768px)" srcset="img/wave1-desktop.png" alt="" width="100%">
+                <img src="img/wave1-mobile.png" alt="" width="100%">
+            </picture>
         </div>
     </div>
-     <div class="container text-center">
-        <div class="row">
-            <div class="col-12">
-            <h1>Om Bølgebrus</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid modi dolores culpa ducimus, vel magni natus harum debitis. Animi delectus minus, nam tenetur voluptatum commodi. Tempora quam deleniti, cum quibusdam dignissimos hic libero dolores incidunt sit voluptas, commodi temporibus odit asperiores quos, at fuga? Sit repudiandae quaerat atque voluptatibus.</p>
+    <!-- Om os: -->
+    <div class="about">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                <h1>Om Bølgebrus</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid modi dolores culpa ducimus, vel magni natus harum debitis. Animi delectus minus, nam tenetur voluptatum commodi. Tempora quam deleniti, cum quibusdam dignissimos hic libero dolores incidunt sit voluptas, commodi temporibus odit asperiores quos, at fuga? Sit repudiandae quaerat atque voluptatibus.</p>
+                </div>
             </div>
         </div>
     </div>
+     
     <!-- Stemningsbilleder: -->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://placehold.co/600x400" width="100%" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://placehold.co/600x400" width="100%" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://placehold.co/600x400" width="100%" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
     <!-- <div class="wave">
         <div class="wave-img-top">
             <img src="img/wave2.png" alt="" width="100%">
@@ -79,104 +110,927 @@
         </div>
     </div> -->
      
-
-    <div class="container text-center">
+    <!-- Grid: -->
+    <div class="container program text-center">
         <div class="row">
             <div class="col-12">
+                <!-- Program: -->
                 <span class="anchor" id="index-program"></span>
                 <h1>Program</h1>
-                <img src="https://placehold.co/600x400" width="100%">
+                <!-- Program Mobile -->
+                 <div class="accordion program-mobile" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Fredag
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>15:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Bølgebrus åbner</a>
+                                    <p>Hovedscenen</p>
+                                    <a href="#">Boder åbner</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Beach volley turnering - tilmelding åbnes</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>16:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Bålplads tændes</a>
+                                    <p>Bålplads</p>
+                                    <a href="#">Windsurfing for begyndere</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Byvandring: Hundesteds Historie</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>18:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Windsurfing opvisning</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>19:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder lukkes</a>
+                                    <p>Bodplads</p>
+                                    <a href="#">Aftendyp i havet og saunagus</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>20:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Sommerbio: Teen Beach Movie</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>22:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Silent Disco</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>00:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <p>Tak for idag!</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Lørdag
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>08:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Morgendyp i havet og saunagus</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>09:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Stiv-som-et-surfbræt-yoga</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>10:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder åbner</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Beach volley turnering starter</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Sandskulpturer laves</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>11:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Wind-surfing for let-øvede</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Mal Lynæs-væggen begynder</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>12:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Jam-session: Tue West</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>13:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">SUP-board for begyndere</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Workshop: Mal et mini surfbræt/skateboard</a>
+                                    <p>Bodområde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>14:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Kitesurfing for begyndere</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Social walk</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>15:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Workshop: Lav et muslingesmykke</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Workshop: Skaterwatch</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>16:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Windsurfing konkurrence</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Børnedisco</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>17:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Beach volley turnering - finale</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>18:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Kitesurfing opvisning</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>19:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Koncert warm-up: Mumle</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>20:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Koncert: Scarlet Pleasure</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>00:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <p>Tak for idag!</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Søndag
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>08:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Morgendyp i havet og saunagus</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>09:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Stiv-som-et-surfbræt-yoga</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>10:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder åbner</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Loppemarked åbner</a>
+                                    <p>Bodområdde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>11:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">SUP-board for let-øvede</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Workshop: Keramik med Ler i Lynæs</a>
+                                    <p>Bodområde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>12:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Jam-session: Tue West</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>13:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Byvandring: Hundesteds Historie</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#">14:00</a>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Kitesurfing for let-øvede</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Sandskulpturer konkurrence</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>15:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Workshop: Lær at knob</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Workshop: Skaterwatch</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>16:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Loppemarked lukker - boder fjernes</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Kitesurfing konkurrence</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>18:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder lukkes og fjernes</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Fællesspisning</a>
+                                    <p>Bodområde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>20:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <p>Farvel og tak for i år!</p>
+                                </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                <!-- Program Desktop -->
+                 <div class="container program-desktop">
+                    <div class="row">
+                        <div class="program-column col-4">
+                            <h3>Fredag</h3>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>15:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Bølgebrus åbner</a>
+                                    <p>Hovedscenen</p>
+                                    <a href="#">Boder åbner</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Beach volley turnering - tilmelding åbnes</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>16:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Bålplads tændes</a>
+                                    <p>Bålplads</p>
+                                    <a href="#">Windsurfing for begyndere</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Byvandring: Hundesteds Historie</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>18:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Windsurfing opvisning</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>19:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder lukkes</a>
+                                    <p>Bodplads</p>
+                                    <a href="#">Aftendyp i havet og saunagus</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>20:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Sommerbio: Teen Beach Movie</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>22:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Silent Disco</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>00:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <p>Tak for idag!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-column col-4">
+                            <h3>Lørdag</h3>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>08:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Morgendyp i havet og saunagus</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>09:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Stiv-som-et-surfbræt-yoga</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>10:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder åbner</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Beach volley turnering starter</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Sandskulpturer laves</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>11:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Wind-surfing for let-øvede</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Mal Lynæs-væggen begynder</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>12:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Jam-session: Tue West</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>13:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">SUP-board for begyndere</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Workshop: Mal et mini surfbræt/skateboard</a>
+                                    <p>Bodområde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>14:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Kitesurfing for begyndere</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Social walk</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>15:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Workshop: Lav et muslingesmykke</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Workshop: Skaterwatch</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>16:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Windsurfing konkurrence</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Børnedisco</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>17:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Beach volley turnering - finale</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>18:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Kitesurfing opvisning</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>19:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Koncert warm-up: Mumle</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>20:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Koncert: Scarlet Pleasure</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>00:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <p>Tak for idag!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-column col-4">
+                            <h3>Søndag</h3>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>08:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Morgendyp i havet og saunagus</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>09:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Stiv-som-et-surfbræt-yoga</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>10:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder åbner</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Loppemarked åbner</a>
+                                    <p>Bodområdde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>11:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">SUP-board for let-øvede</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Workshop: Keramik med Ler i Lynæs</a>
+                                    <p>Bodområde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>12:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Jam-session: Tue West</a>
+                                    <p>Hovedscenen</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>13:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Byvandring: Hundesteds Historie</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#">14:00</a>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Kitesurfing for let-øvede</a>
+                                    <p>Stranden</p>
+                                    <a href="#">Sandskulpturer konkurrence</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>15:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Workshop: Lær at knob</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Workshop: Skaterwatch</a>
+                                    <p>Hotspot</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>16:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Loppemarked lukker - boder fjernes</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Kitesurfing konkurrence</a>
+                                    <p>Stranden</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>18:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <a href="#">Boder lukkes og fjernes</a>
+                                    <p>Bodområde</p>
+                                    <a href="#">Fællesspisning</a>
+                                    <p>Bodområde</p>
+                                </div>
+                                <div class="col-2">
+                                    <p>20:00</p>
+                                </div>
+                                <div class="col-10 text-start">
+                                    <p>Farvel og tak for i år!</p>
+                                </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-12">
+                <!-- Kort -->
                 <span class="anchor" id="index-kort"></span>
                 <h1>Kort</h1>
                 <img src="https://placehold.co/600x400" width="100%">
             </div>
-            <div class="col-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <img src="https://placehold.co/300x300" alt="" width="100%">
-                        </div>
-                        <div class="col-md-8">
-                            <h1>Lynæs Surfcenter</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut odio suscipit sit eos architecto quas dolore quasi blanditiis. Culpa soluta voluptatem deleniti adipisci quis error incidunt iusto earum cumque.</p>
-                        </div>
-                        <div class="col-12">
-                            <div class="container text-center">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                    <img src="https://placehold.co/300x300" alt="" width="100%">
-                                    </div>
-                                </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- Footer -->
-     <div class="footer">
-        <div class="container text-center">
         <div class="row">
             <div class="col-12 col-md-4">
-                <img src="img/favicon.png" alt="" height="200px">
+                <!-- Sponsorer -->
+                <a href="https://surfcenter.dk/"><img src="img/sponsor-Lynæs.png" alt="" width="100%"></a>
             </div>
-            <div class="contact col-12 col-md-8 text-start">
-                <h2>Kontakt</h2>
-                <a href="mailto:info@surfcenter.dk"><p>info@surfcenter.dk</p></a>
-                <a href="tel:29877766">+45 29877766</a>
-                <p>(Telefontid alle dage 10-16)</p>
-                <a href="https://maps.app.goo.gl/cZshS7ZMxA8vbRKd6"><p>Lynæs Havnevej 8A & 3D 3390 Hundested</p></a>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                            </svg>
+            <div class="col-12 col-md-6">
+                <h1>Lynæs Surfcenter</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut odio suscipit sit eos architecto quas dolore quasi blanditiis. Culpa soluta voluptatem deleniti adipisci quis error incidunt iusto earum cumque.</p>           
+            </div>
+        </div>
+        <div class="row">
+            <div class="sponsor-logo col-12 col-md-4">
+                <a href="https://hundestedhavn.dk/"><img src="img/sponsor6.png" alt="" width="100%"></a>
+            </div>
+            <div class="sponsor-logo col-12 col-md-4">
+                <a href="https://halsnaes.dk/"><img src="img/sponsor7.png" alt="" width="100%"></a>
+            </div>
+            <div class="sponsor-logo col-12 col-md-4">
+                <a href="https://www.halsbryg.dk/"><img src="img/sponsor2.png" alt="" width="100%"></a>
+            </div>
+            <div class="sponsor-logo col-6 col-md-3">
+                <a href="https://www.lerilynaes.dk/"><img src="img/sponsor5.png" alt="" width="100%"></a>
+            </div>
+            <div class="sponsor-logo col-6 col-md-3">
+                <a href="https://sandfestival.dk/"><img src="img/sponsor4.png" alt="" width="100%"></a>
+            </div>
+            <div class="sponsor-logo col-6 col-md-3">
+                <a href="https://www.facebook.com/LynaesFiskogSteakhouse/"><img src="img/sponsor3.png" alt="" width="100%"></a>
+            </div>
+            <div class="sponsor-logo col-6 col-md-3">
+                <a href="https://bikeandbake.dk/"><img src="img/sponsor1.png" alt="" width="100%"></a>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Ofte stillede spørgsmål: -->
+            <h1>Ofte stillede spørgsmål</h1>
+            <div class="faq col-12 col-xl-4">
+                <h3>Faciliteter</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Hvornår har Bølgebrus åbent?
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <p>Bølgebrus åbningstider:</p>
+                            <ul>
+                                <li>Fredag: kl. 15-00.</li>
+                                <li>Lørdag: kl. 08-00.</li>
+                                <li>Søndag: kl. 08-20.</li>
+                            </ul>
+                            <p>Boder åbningstider:</p>
+                            <ul>
+                                <li>Fredag: kl. 15-19.</li>
+                                <li>Lørdag: kl. 10-18.</li>
+                                <li>Søndag: kl. 10-18.</li>
+                            </ul>
+                            <p>Opsætning af boder kan ske torsdag fra kl. 10.</p>
                         </div>
-                        <div class="col-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Hvordan kommer jeg til festivalen?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <ul>
+                                <li>Bus:</li>
+                                <li>Tog:</li>
+                                <li>Bil: Hvis muligt, tag dine venner og familie med på turen så der spares på benzin!</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Er der mulighed for parkering?
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <p>Ja, det er muligt at parkere ved Lynæs Havn lige på den anden side af hovedvejen. BEMÆRK: parkeringsregler gælder. </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Kan jeg medbringe egen mad og drikke?
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <p>Ja, det er muligt at nyde medbragt mad og drikke i vores picnicområder.</p>
+                            <p>Mad kan også købes i vores madboder.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Er der toiletter og bad på festivalpladsen?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Der er toiletter på festivalspladsen. Der er bade på campsitet.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Er festivalen?
+                        </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Alle er velkomne på Bølgebrus.</p>
+                            <p>Bølgebrus foregår ved Lynæs Surfcenter og strandområde og det kan ikke garanteres at det omkringliggende terræn er kørestolsvenligt.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Kan jeg medringe hund?
+                        </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Hunde er mere end velkomne på festivalspladsen. BEMÆRK: Hunde må desværre ikke komme med ind i Lynæs Surfcenters overnatningsenheder, da ikke alle kan tåle dyr. Vi håber, I vil respektere dette.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                            Vil der være livreddere tilstede under festivalen?
+                        </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            Ja, der vil være livreddere tilstede ved stranden udenfor Lynæs Surfcenter fra kl. 10-19.
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carbon-badge">
-                <div class="col-12">
-                    <div id="wcb" class="carbonbadge"></div>
-                    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+            <div class="faq col-12 col-xl-4">
+                <h3>Aktiviteter</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Skal man kunne de forskellige vandsport på forhånd for at deltage?
+                        </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Slet ikke! Vores workshops er for alle uanset erfaring, og vores professionelle undervisere vil guide dig trygt igennem hele workshoppen.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Hvordan tilmelder jeg mig workshops, turneringer og aktiviteter?
+                        </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Det er muligt at tilmelde sig workshops og konkurrencer på festivalspladsen, når festivalen åbner. 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            Koster det noget at deltage?
+                        </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Der er gratis entré til hele festivalen, også til campsitet. Udvalgte aktiviteter og workshops samt koncerten og silent disco er pladsbestemte og kræver betaling. Dette finder sted på festivalspladsen eller på vores hjemmeside under den enkelte aktivitet i programmet. 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            Hvad hvis vejret er dårligt?
+                        </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Vi tager forbehold for aflysninger ved dårlige vejrforhold. I tilfælde af aflysninger vil refundering finde sted på det benyttede betalingskort.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            Er festivalen også for børn?
+                        </button>
+                        </h2>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Ja, festivalen er familievenlig og der vil både være aktiviteter for store som små.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            Hvordan tilmelder jeg mig loppemarkedet om søndagen?
+                        </button>
+                        </h2>
+                        <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            Tilmelding til loppemarked finder sted i receptionen i Lynæs Shoppen. 
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12">
-                <p>&copy; Bølgebrus 2025</p>
+            <div class="faq col-12 col-xl-4">
+                <h3>Overnatning</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifthteen" aria-expanded="true" aria-controls="collapseFifthteen">
+                            Kan jeg leje Lynæs’ egen overnatningsenheder i festivalsweekenden?
+                        </button>
+                        </h2>
+                        <div id="collapseFifthteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            Ja, det er muligt at leje Lynæs Surfcenters overnatningsenheder. Du kan se priser og ledighed for de enkelte enheder i datovælgeren på enheden eller se ledighedsoverblik for alle enheder <a href="https://surfcenter.dk/overnatning/#ledighed">her</a>.
+                            BEMÆRK: Udlejning sker efter først-til-mølle-princippet. Lynæs Surfcenters regler gælder. 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                            Er det muligt at overnatte på festivalpladsen?
+                        </button>
+                        </h2>
+                        <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Ja, det vil være muligt at overnatte på campsitet på festivalpladsen, hvor telte kan slås op.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                            Er der mulighed for at udleje telte?
+                        </button>
+                        </h2>
+                        <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Ja, der vil i shoppen være mulighed for at leje et tomandstelt mellem kl. 10-17.
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-     </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer row">
+                <!-- Footer logo: -->
+                 <div class="footer-logo col-12 col-md-6">
+                    <img src="img/favicon.png" alt="" width="100%">
+                </div>
+                <!-- Footer kontaktinformation: -->
+                <div class="contact col-12 col-md-6 text-start">
+                    <h2>Kontakt</h2>
+                    <a href="mailto:info@surfcenter.dk"><p>info@surfcenter.dk</p></a>
+                    <a href="tel:29877766">+45 29877766</a>
+                    <p>(Telefontid alle dage 10-16)</p>
+                    <a href="https://maps.app.goo.gl/cZshS7ZMxA8vbRKd6"><p>Lynæs Havnevej 8A, 3390 Hundested</p></a>
+                    <!-- Footer SoMe-links: -->
+                    <div class="container text-center">
+                        <div class="some row">
+                            <div class="some col-2">
+                                <a href=">#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="some col-2">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carbon-badge">
+                    <div class="col-12">
+                        <div id="wcb" class="carbonbadge"></div>
+                        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p>&copy; Bølgebrus 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
      
-     
+    <!-- Egen JS-fil: -->
     <script src="script.js"></script>
+
+    <!-- Bootstrap JS: -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
 </body>
