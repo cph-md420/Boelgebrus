@@ -42,6 +42,7 @@ ul {
     margin-top:-60px; /*negative højde på header*/
     visibility:hidden;
 }
+/* Styling af dato og lokation i siderne, disse kaldes "descriptor" */
 .descriptor {
     display: block;
     position: fixed;
@@ -67,6 +68,7 @@ ul {
         transition: color .15s ease-in-out;
     }
 }
+/* Generel styling */
 .container{
     width: 70%;
 }
@@ -89,6 +91,9 @@ ul {
 .carousel-inner{
     z-index: -1 !important;
 }
+.about{
+    color: var(--highlight);
+}
 .map{
     background-color: var(--main-color);
     padding-top: 2em;
@@ -99,6 +104,14 @@ ul {
 }
 .sponsorer h1{
     color: var(--text-color) !important;
+}
+.sponsorer-lynaes.row{
+    margin-bottom: 0;
+}
+.eksterne-sponsorer{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10em;
 }
 .col-12-sponsors{
     width: 100%;
@@ -138,9 +151,9 @@ ul {
 footer{
     padding-top: 3rem;
     background-color: var(--main-color);
+    color: var(--highlight);
 }
-footer a, .program a{
-    /* text-decoration: none; */
+.program a{
     color: var(--text-color);
     transition: .15s ease-in-out;
 }
@@ -148,8 +161,12 @@ footer a, .program a{
     color: var(--main-color);
     transition: .15s ease-in-out;
 }
-footer a:hover{
+footer a{
     color: var(--highlight);
+    transition: .15s ease-in-out;
+}
+footer a:hover{
+    color: var(--text-color);
     transition: .15s ease-in-out;
 }
 .footer.row, .some.row{
@@ -186,15 +203,6 @@ footer a:hover{
     }
     .desktop{
         display: inline;
-    }
-    .carousel-inner{
-        display: flex;
-    }
-    /* Gør at der er flere billeder som vises på en gang i karousellen: */
-    .carousel-item{
-        display: block;
-        margin-right: 0;
-        flex-wrap: 0 0 calc(100%/3);
     }
     .faq, .program-column{
         max-width: 31.9%;
