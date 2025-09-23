@@ -17,6 +17,12 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+video{
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
 .navbar{
     background-color: var(--main-color) !important;
     padding: 0 !important;
@@ -99,6 +105,7 @@ ul {
 }
 .about{
     color: var(--highlight);
+    padding: 5em 0;
 }
 .about p{
     margin: 0;
@@ -174,6 +181,9 @@ footer{
     color: var(--main-color);
     transition: .15s ease-in-out;
 }
+.ofte-stillede-spørgsmål h1 {
+        text-align: center;
+    }
 footer a{
     color: var(--highlight);
     transition: .15s ease-in-out;
@@ -223,9 +233,6 @@ footer a:hover{
     .faq, .program-column{
         max-width: 31.9%;
         margin: 0 auto;
-    }
-    .ofte-stillede-spørgsmål h1 {
-        text-align: center;
     }
     .footer-logo, .contact{
         margin: 0;
