@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bølgebrus</title>
 
+    <!-- Meta-beskrivelse -->
+    <meta name="description" content="Bølgebrus er en festival fyldt med vandsportsaktiviteter, musik, konkurrencer og sjove aktiviteter for hele familien!">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
-
 
     <!-- Bootstrap bibliotek -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -762,7 +764,11 @@
             <div class="row">
                 <div class="col-12">
                 <h1>Kort</h1>
-                <img src="img/boelgebrus-kort.png" width="100%">
+                <img src="img/boelgebrus-kort.png" width="100%" onclick="openImage(this)">
+                </div>
+                <!-- Popup -->
+                <div id="lightbox" class="lightbox" onclick="closeImage()">
+                <img id="lightbox-img" src="">
                 </div>
             </div>
         </div>
