@@ -8,21 +8,24 @@
     --text-color: #613914;
 
 }
+/* Generel styling: */
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--second-color);
     color: var(--text-color);
 }
 ul {
-    list-style-type: none;
+    /* Styling lister */
+    list-style-type: none; /* Fjerner bullets fra lister */
     padding-left: 0;
 }
 video{
-    width: 100%;
+    width: 100%; /* Banner-video fylder hele skærmen */
 }
 h2{
     text-align: center;
 }
+/* Navbar styling: */
 .navbar{
     background-color: var(--main-color) !important;
     padding: 0 !important;
@@ -42,7 +45,7 @@ h2{
 .nav-link:hover{
     color: var(--text-color);
 }
-/* Anchor, der bruges til at "hoppe" op/ned på siden, fx back to top-knap eller banner-pil-------------------------------------------------  */
+/* Anchor, der bruges til at "hoppe" op/ned på siden via navbar */
 .anchor{
     display:block;
     height:60px; /*højde på header*/
@@ -60,53 +63,47 @@ h2{
     color: var(--highlight);
     transition: .15s ease-in-out;
 }
-.descriptor-left {
+.descriptor-left {  /* Placering lokation */
     transform-origin: top left;
     transform: rotate(-90deg) translate(-100%, 2rem);
 }
-.descriptor-right {
+.descriptor-right {  /* Placering dato */
     right: 0;
     transform-origin: top right;
     transform: rotate(90deg) translate(100%, 2rem);
 }
-.test{
+.change-descriptor{    /* Ændring af farve på descriptor */
     .descriptor{
         color:var(--text-color);
         transition: color .15s ease-in-out;
     }
 }
-/* Generel styling */
+/* Styling grid*/
 .container{
     width: 70%;
 }
 .row{
     margin: 3em auto;
 }
-.wave-content{
-    position: relative;
-}
+/* Vis elementer på mobile-view og fjern elementer fra desktop-view */
 .mobile{
     display: inline;
 }
 .desktop{
     display: none;
 }
-.wave-img-top img{
-    margin-top: -15%;
-}
-.wave-img-bottom img{
-    margin-bottom: -13%;
+/* Styling vektor-bølge-sektion */
+.wave-content{
+    position: relative;
 }
 .wave-img-top img{
     width: 100%;
- }
-.carousel-inner{
-    z-index: -1 !important;
+    margin-top: -15%;     /* Får bølge til at overlappe billeder */
 }
-.about{
-    color: var(--highlight);
-    padding: 5em 0;
+.wave-img-bottom img{
+    margin-bottom: -13%; /* Får bølge til at overlappe billeder */
 }
+/* Styling banner-knap */
 .btn{
     position: absolute;
     top: 75%;
@@ -121,16 +118,58 @@ h2{
 .btn:hover{
     background-color: var(--text-color);
 }
+/* Styling stemningsbilleder karousel */
+.carousel-inner{
+    z-index: -1 !important;
+}
+/* Styling "Om Bølgebrus"-sektion */
+.about{
+    color: var(--highlight);
+    padding: 5em 0;
+}
 .about p{
     margin: 0;
 }
+/* Styling "Program"-sektion */
+.accordion-button.collapsed{
+    background-color: var(--highlight);
+    color: var(--text-color);
+    border: solid 1px var(--second-color);
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--main-color);
+    color: var(--highlight);
+}
+.accordion-body{
+    background-color: var(--highlight);
+    color: var(--text-color);
+}
+.program-column.row{
+    margin: 0 auto;
+}
+.program h1{
+    color: var(--highlight);
+}
+.program-column p{
+    margin: 0;
+    margin-bottom: 1em;
+}
+.program a{
+    color: var(--text-color);
+    transition: .15s ease-in-out;
+}
+.program a:hover{
+    color: var(--main-color);
+    transition: .15s ease-in-out;
+}
+/* Styling "Kort"-sektion */
 .map{
     background-color: var(--main-color);
     padding-top: 2em;
     cursor: zoom-in;
 }
 .lightbox {
-    display: none;                /* skjult som udgangspunkt */
+    display: none; /* Skjules med det samme */
     position: fixed;
     z-index: 9999;
     top: 0; left: 0;
@@ -138,13 +177,13 @@ h2{
     background: rgba(31, 34, 80, 0.7);
     justify-content: center;
     align-items: center;
-    }
-    
+} 
 .lightbox img {
     max-width: 100%;
     max-height: 100%;
     cursor: zoom-out;
 }
+/* Styling "Sponsorer"-sektion */
 .sponsorer{
     padding-top: 2em;
     background-color: var(--highlight);
@@ -163,12 +202,7 @@ h2{
 .col-12-sponsors{
     width: 100%;
 }
-.program-mobile{
-    display: block;
-}
-.program-desktop{
-    display: none;
-}
+/* Styling "Ofte stillede spørgsmål"-sektion */
 .faq, .program-column{
     padding: 1em;
     margin: 1em 0.5em;
@@ -176,45 +210,14 @@ h2{
     color: var(--text-color);
     border-radius: 0.375rem; /* Border-radius-værdi taget fra Bootstrap */
 }
-.accordion-button.collapsed{
-    background-color: var(--highlight);
-    color: var(--text-color);
-    border: solid 1px var(--second-color);
-}
-.accordion-button:not(.collapsed){
-    background-color: var(--main-color);
-    color: var(--highlight);
-}
-.accordion-body{
-    background-color: var(--highlight);
-    color: var(--text-color);
-}
-.program h1{
-    color: var(--highlight);
-}
-.program-column p{
-    margin: 0;
-    margin-bottom: 1em;
-}
-.program-column.row{
-    margin: 0 auto;
-}
+.ofte-stillede-spørgsmål h1 {
+        text-align: center;
+    }
 footer{
     padding-top: 3rem;
     background-color: var(--main-color);
     color: var(--highlight);
 }
-.program a{
-    color: var(--text-color);
-    transition: .15s ease-in-out;
-}
-.program a:hover{
-    color: var(--main-color);
-    transition: .15s ease-in-out;
-}
-.ofte-stillede-spørgsmål h1 {
-        text-align: center;
-    }
 footer a{
     color: var(--highlight);
     transition: .15s ease-in-out;

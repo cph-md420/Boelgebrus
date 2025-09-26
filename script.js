@@ -1,14 +1,14 @@
 
-// When the user scrolls down 50px from the top of the document, resize the header's font size
+// Når brugeren scroller 300px ned af siden, skal farven på dato og lokation i margen ændres
 window.onscroll = function() {scrollFunction()};
 
 function addClass(){
-    var element = document.getElementById("descriptor");
-    element.classList.add("test");
+  var element = document.getElementById("descriptor");
+  element.classList.add("change-descriptor");
 }
 function removeClass(){
-    var element = document.getElementById("descriptor");
-    element.classList.remove("test");
+  var element = document.getElementById("descriptor");
+  element.classList.remove("change-descriptor");
 }
 
 function scrollFunction() {
@@ -19,11 +19,12 @@ function scrollFunction() {
   }
 }
 
+// Når kortet klikkes, åbner en lightbox op:
 function openImage(img) {
-      document.getElementById("lightbox").style.display = "flex";
-      document.getElementById("lightbox-img").src = img.src;
-    }
-  
-    function closeImage() {
-      document.getElementById("lightbox").style.display = "none";
-    }
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeImage() {
+  document.getElementById("lightbox").style.display = "none";
+}
