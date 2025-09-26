@@ -107,12 +107,27 @@ h2{
     color: var(--highlight);
     padding: 5em 0;
 }
+.btn{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0.75rem 2rem;
+
+    background-color: var(--main-color);
+    border: none;
+    transition: .15s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--text-color);
+}
 .about p{
     margin: 0;
 }
 .map{
     background-color: var(--main-color);
     padding-top: 2em;
+    cursor: zoom-in;
 }
 .lightbox {
     display: none;                /* skjult som udgangspunkt */
@@ -128,6 +143,7 @@ h2{
 .lightbox img {
     max-width: 80%;
     max-height: 80%;
+    cursor: zoom-out;
 }
 .sponsorer{
     padding-top: 2em;
@@ -230,6 +246,19 @@ footer a:hover{
     text-align: center;
 }
 @media screen and (min-width:768px) {
+    .navbar{
+        min-height: 80px !important;
+    }
+    .navbar-brand img{
+        height: 70px;
+    }
+    .navbar-toggler-icon{
+        height: 50px !important;
+        width: 50px !important;
+    }
+    .btn{
+        top: 40%;
+    }
     .descriptor {
         font-size: 24px;
     }
@@ -271,14 +300,32 @@ footer a:hover{
         justify-content: left;
     }
 }
+@media screen and (min-width:992px) {
+    .btn{
+        top: 45%;
+    }
+}
+@media screen and (min-width:1080) {
+    .btn{
+        top: 47%;
+    }
+}
 @media screen and (min-width:1200px){
     .container{
         width: 100%;
+    }
+    .btn{
+        top: 50%;
     }
     .program-mobile{
         display: none;
     }
     .program-desktop{
         display: block;
+    }
+}
+@media screen and (min-width:1400px) {
+    .btn{
+        top: 60%;
     }
 }
