@@ -211,8 +211,9 @@ h2{
     border-radius: 0.375rem; /* Border-radius-værdi taget fra Bootstrap */
 }
 .ofte-stillede-spørgsmål h1 {
-        text-align: center;
-    }
+    text-align: center;
+}
+/* Footer */
 footer{
     padding-top: 3rem;
     background-color: var(--main-color);
@@ -248,7 +249,16 @@ footer a:hover{
 .contact h2, .contact p{
     text-align: center;
 }
+/* Media queries */
 @media screen and (min-width:768px) {
+    /* Vis elementer på desktop-view og fjern elementer fra mobile-view */
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    /* Ændrer navbar højde på desktop: */
     .navbar{
         min-height: 80px !important;
     }
@@ -260,27 +270,24 @@ footer a:hover{
         width: 50px !important;
     }
     .btn{
-        top: 40%;
+        top: 40%; /* Ændrer placering af knap i banner */
     }
     .descriptor {
-        font-size: 24px;
+        font-size: 24px; /* Ændrer størrelse på tekst for dato og lokation */
     }
+    /* Ændrer formattering af bølge: */
     .wave-img-top img{
         margin-top: -7%;
     }
     .wave-img-bottom img{
-        margin-bottom: -6%;
+        margin-bottom: -7%;
     }
-    .mobile{
-        display: none;
-    }
-    .desktop{
-        display: block;
-    }
+    /* Ændrer størrelsen på kolonner for program og ofte-stillede spørgsmål */
     .faq, .program-column{
         max-width: 31.9%;
         margin: 0 auto;
     }
+    /* Ændrer footer formattering */
     .footer-logo, .contact{
         margin: 0;
     }
@@ -305,30 +312,25 @@ footer a:hover{
 }
 @media screen and (min-width:992px) {
     .btn{
-        top: 45%;
+        top: 45%; /* Ændrer placering af knap i banner */
     }
 }
 @media screen and (min-width:1080) {
     .btn{
-        top: 47%;
+        top: 47%; /* Ændrer placering af knap i banner */
     }
 }
 @media screen and (min-width:1200px){
     .container{
-        width: 100%;
+        width: 100%; 
+        /* Får griddet til at fylde hele skærmen */
     }
     .btn{
-        top: 50%;
-    }
-    .program-mobile{
-        display: none;
-    }
-    .program-desktop{
-        display: block;
+        top: 50%; /* Ændrer placering af knap i banner */
     }
 }
 @media screen and (min-width:1400px) {
     .btn{
-        top: 60%;
+        top: 60%; /* Ændrer placering af knap i banner */
     }
 }
