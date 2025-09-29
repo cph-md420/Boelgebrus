@@ -144,6 +144,12 @@ h2{
     background-color: var(--highlight);
     color: var(--text-color);
 }
+.program-mobile{
+    display: block;
+}
+.program-desktop{
+    display: none;
+}
 .program-column.row{
     margin: 0 auto;
 }
@@ -276,11 +282,15 @@ footer a:hover{
         font-size: 24px; /* Ændrer størrelse på tekst for dato og lokation */
     }
     /* Ændrer formattering af bølge: */
+
     .wave-img-top img{
-        margin-top: -7%;
+        margin-top: -6%;
     }
     .wave-img-bottom img{
-        margin-bottom: -7%;
+        margin-bottom: -6%;
+    }
+    .wave-img-top-extra img{
+        margin-top: -8%;
     }
     /* Ændrer størrelsen på kolonner for program og ofte-stillede spørgsmål */
     .faq, .program-column{
@@ -327,6 +337,12 @@ footer a:hover{
     }
     .btn{
         top: 50%; /* Ændrer placering af knap i banner */
+    }
+    .program-mobile{
+        display: none;
+    }
+    .program-desktop{
+        display: block;
     }
 }
 @media screen and (min-width:1400px) {
