@@ -48,8 +48,8 @@ h2{
 /* Anchor, der bruges til at "hoppe" op/ned på siden via navbar */
 .anchor{
     display:block;
-    height:60px; /*højde på header*/
-    margin-top:-60px; /*negative højde på header*/
+    height:80px; /*højde på header*/
+    margin-top:-80px; /*negative højde på header*/
     visibility:hidden;
 }
 /* Styling af dato og lokation i siderne, disse kaldes "descriptor" */
